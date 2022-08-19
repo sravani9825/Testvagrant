@@ -1,0 +1,8 @@
+team=["gt","lsg","rrr","dc","rcb","kkr","pvks","srh","csk","mi"]
+points=[20,18,16,14,14,12,12,12,8,6]
+sum=0
+result=[[True,True,False,False,True],[True,False,False,True,True],[True,False,False,True,False],[True,True,False,True,False],[False,True,False,True,False],[False,True,True,False,True],[False,True,False,True,False],[True,False,False,False,False],[False,True,False,False,True],[False,True,False,True,True]]
+for i in result:
+    for j in i:
+        if i[j]==False and i[j+1]==False:
+            print(points[j])
